@@ -1,0 +1,18 @@
+<%-include("partials/header");-%>
+<p>Signed in as <%= Email %></p>
+  <h1 style="color:brown;font-family: 'Merriweather', serif; ">HOME</h1>
+   <p><%= para %></p>
+  <!-- for(var i=0;i<posthome.length;i++){
+   console.log(posthome[i].title);
+   } -->
+   <%# thw below syntax will ook through our posts arrta and foe each posts it will print the posts title %>
+     <% posthome.forEach(function(post) {%>
+        <h1> <%=post.info.title %></h1>
+        <p><%= post.info.content.substring(0,100)+" ..." %>
+        <a href="/posts/<%=post._id %>"> Read More </a>
+        </p>
+         <% });%>
+
+
+
+<%-include("partials/footer");-%>

@@ -1,0 +1,14 @@
+<%-include("partials/header");-%>
+<h1>COMPOSE</h1>
+<form class="" action="/compose" method="post">
+  <div class="form-group">
+   <p>Signed in as <%=Email %></p>
+  <h3>Title</h3>
+  <input class="form-control form-control-sm" type="text" name="posttitle">
+  <h3>Post</h3>
+  <textarea name="postbody" class="form-control" rows="5"></textarea>
+  <!-- <input type="hidden" name="useremail" value="<%=Email %>"> -->
+</div>
+  <button class="btn btn-primary btn-sm"type="submit" name="button">PUBLISH</button>
+  </form>
+<%-include("partials/footer");-%>

@@ -1,0 +1,14 @@
+<%-include("partials/header");-%>
+<h1>UPDATE</h1>
+<form class="" action="/update" method="post">
+  <div class="form-group">
+   <p>Signed in as <%=Email %></p>
+  <h3>Title</h3>
+  <input class="form-control form-control-sm" type="text" name="posttitle" value="<%=posttitle%>">
+  <h3>Post</h3>
+  <textarea name="postbody" class="form-control" rows="5"><%=postcontent%></textarea>
+
+</div>
+  <button class="btn btn-primary btn-sm"type="submit" name="button">Update</button>
+  </form>
+<%-include("partials/footer");-%>
